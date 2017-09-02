@@ -1,0 +1,10 @@
+Q1 What happens when you initialize a repository? Why do you need to do it?
+
+When you intialize a repo, it creates the .git file. At that point the directory then becomes a repo. Initializing needs to be done
+to generate the file that will eventually become the holder for all metadata.
+
+Q2 How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area isn't a final location, it is a temporary location that holds the changes that will be made. The working directory
+and the repository are both "folders". I think the staging area is valuable because in essence is a summary checklist before
+committing.
