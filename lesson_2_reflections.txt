@@ -8,3 +8,34 @@ Q2 How is the staging area different from the working directory and the reposito
 The staging area isn't a final location, it is a temporary location that holds the changes that will be made. The working directory
 and the repository are both "folders". I think the staging area is valuable because in essence is a summary checklist before
 committing.
+
+Q3 How can you use the staging area to make sure you have one commit per logical change?
+
+If the staging area is huge, it might mean that there are too many change for one commit. So in a way, the staging area can be used
+to gauge if a commit is covering one logical change or several.
+
+Q4 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches help organize when there are major changes or tests to the code. By letting the "core" code continue to be maintained
+new features and tests can be worked on in parallel and eventually scrapped or merged. By looking at a branch, you can trace back
+to families of code and where features (and bugs) may have originated.
+
+Q5 How do the diagrams help you visualize the branch structure?
+
+The diagram helps to show where you are working now and where you may want to work in the future. It also helps to locate at what point
+in the history you may need to make changes to fix a bug appropiately.
+
+Q6 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result of merging, is a single commit that combines all of the code from the two branches into one state. The reason it is
+represented in the diagram is because it allows us to see which commits will be contained in the merged branch.
+
+Q7 What are the pros and cons of the Git's automatic merging vs. always doing merges manually?
+
+The obvious pros to automatic merging is that it is faster and that the history is tracked so if there are any issues related
+to the merge, someone can more easily troubleshoot it. The con is that Git may not know the intent of why changes were made and
+which should be included in the merge, therefore a person needs to intervene in these cases (which is not really that bad).
+
+Manual merging is clearly much slower than automatic merging and introduces another potential source of error since the changes need
+to be made manually. It may also be very difficult for someone to see the history of how the merge was performed. The only pro I can
+think of is that a manual merge gives someone a lot more control of what goes into the next commit.

@@ -2,3 +2,34 @@ Q1 When would you want to use a remote repository rather than keeping all your w
 
 When you want to be more remote or are working with virtual machines/workstations. Also if you want to collaborate with others,
 then it would be best to have a remote repository that everyone can get to.
+
+Q2 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your
+remote repository?
+
+Changes on the remote repository may impact something you are currently working on. If you manually pull, then you can double
+check or prepare for those potential impacts. If the pulls are automatic, then you may not be aware of potential impacts.
+
+Q3 Describe the differences between forks, clones, and branches. When would you use on instead of another?
+
+Forks - Clone a repo on GitHub from one account to another - maintains a link to the source repo
+Clones - copys a repo from a sources onto your local workspace, a fork is pretty much a clone as well
+Branches - in a way a branch clones the preceeding line of commits, branches remember the parent commits
+
+Q4 What is the benefit of having a copy of the last known state of the remote stored locally?
+
+You can work offline without having to merge the remote and local states.
+
+Q5 How would you collaborate without using Git or Github? What woudl be easier, and what would be harder?
+
+Use a central server or storage location. Also, you could sit in the same room and collaborate directly with others.
+Communication would be much faster and its easier to ask someone a question right there on the spot instead of having
+to go find them. The main difficulty is that you can only collaborate when you can get a connection to that storage
+location or are in the same room.
+
+Q6 When would you want to make changes in a separate branch rather than directly in master? What benefit does each approach have?
+
+Making change directly into master means that after you commit the change, the tip of the branch is the most recent version.
+Since the tip is the visible or "live" part of the product, you are making changes that have an immediate impact on the user.
+
+Making a separate branch allows you to work on new or experimental features without impacting the "live" version that others
+are using. The drawback is that you will later have to merge versions.
